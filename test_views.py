@@ -16,8 +16,8 @@ class ReservationViewTests(TestCase):
         response = self.client.get(url)
         assert response.status_code == 200
 
-    # Example view test - adjust to your views/urls
-    # def test_reservation_list_view(self):
-    #     url = reverse("reservation-list")
-    #     response = self.client.get(url)
-    #     assert response.status_code == 200
+    
+     def test_reservation_list_view(self):
+        url = reverse("reservation-list")
+        response = self.client.get(url)
+        assert response.status_code == 200
